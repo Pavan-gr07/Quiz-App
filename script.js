@@ -64,10 +64,10 @@ function renderQuestions(){
     for(let i=0;i< data.length; i++){
         output += `<div class="question">
         <h2>Q${i+1}. ${data[i].question}</h2>
-        <label><input type="radio"  id="${1}" name="id${i}"/>${data[i].options[1]}</label>
-        <label><input type="radio" id="${2}"  name="id${i}"/>${data[i].options[0]}</label>
-        <label><input type="radio"  id="${3}" name="id${i}"/>${data[i].options[3]} </label>
-        <label><input type="radio" id="${4}"  name="id${i}" />${data[i].options[4]} </label>
+        <label><input type="radio"  id="${1}" name="id${i}"/>${data[i].options[0]}</label>
+        <label><input type="radio" id="${2}"  name="id${i}"/>${data[i].options[1]}</label>
+        <label><input type="radio"  id="${3}" name="id${i}"/>${data[i].options[2]} </label>
+        <label><input type="radio" id="${4}"  name="id${i}" />${data[i].options[3]} </label>
     </div>`
     }
     questionE1.innerHTML = output;
